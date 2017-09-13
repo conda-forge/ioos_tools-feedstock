@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: ioos_tools
@@ -6,10 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/ioos_tools/ioos_tools-{{ version }}.tar.gz
-  sha256: c5d4a09f985de6e6d868db6808b3f15462d2ff675acdbc62242aba5b07842287
+  sha256: 99ca893ac0f300582703051f464da9072f90f17de2a280cf4bc04420a0c03a02
 
 build:
   number: 0
+  noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
