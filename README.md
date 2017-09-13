@@ -14,9 +14,7 @@ Summary: Misc functions for IOOS notebooks
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ioos_tools-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ioos_tools-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/ioos_tools-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ioos_tools-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ioos_tools-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ioos-tools-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/ioos_tools-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ioos_tools-feedstock)
 
 Current release info
 ====================
