@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: ioos_tools
@@ -6,17 +6,17 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/ioos_tools/ioos_tools-{{ version }}.tar.gz
-  sha256: ef68f8c1b6b371b47a017de8de910455a259fe5b9d92441f971ecbdb4e3f2b81
+  sha256: 649b386fce3ef071d691b2ac5f51ebcbe92ec7416674a7b88bd31016f0ca3b16
 
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - beautifulsoup4
@@ -32,7 +32,7 @@ requirements:
     - requests
     - scikit-learn
     - scipy
-
+    - timeout-decorator
 
 test:
   imports:
