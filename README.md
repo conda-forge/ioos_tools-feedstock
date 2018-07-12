@@ -14,12 +14,15 @@ Summary: Misc functions for IOOS notebooks
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/ioos_tools-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ioos_tools-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/ioos_tools-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/ioos_tools-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ioos_tools/badges/version.svg)](https://anaconda.org/conda-forge/ioos_tools)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ioos_tools/badges/downloads.svg)](https://anaconda.org/conda-forge/ioos_tools)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-ioos_tools-green.svg)](https://anaconda.org/conda-forge/ioos_tools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ioos_tools.svg)](https://anaconda.org/conda-forge/ioos_tools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ioos_tools.svg)](https://anaconda.org/conda-forge/ioos_tools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ioos_tools.svg)](https://anaconda.org/conda-forge/ioos_tools) |
 
 Installing ioos_tools
 =====================
