@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: ioos_tools
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/ioos_tools/ioos_tools-{{ version }}.tar.gz
-  sha256: 7fca2d5d59a9122f4b747c91e31396a1f695580ff9902718d54dc895c2835e54
+  sha256: 0612fe442a38715a3c2d660d302ac83c0abbe2844adddc0227e9d6942512bb44
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
     - iris
     - matplotlib
     - netcdf4
+    - cftime
     - numpy
     - oceans
     - owslib
