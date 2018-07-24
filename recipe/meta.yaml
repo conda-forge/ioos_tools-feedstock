@@ -9,7 +9,7 @@ source:
   sha256: a30c5f77b8a90c66c8e5ced666cd1518ee1d5e9011be7ce7e5f3d57c45cdc28e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
@@ -24,13 +24,13 @@ requirements:
     - iris
     - matplotlib
     - netcdf4
-    - cftime
     - numpy
     - oceans
     - owslib
-    - pandas
+    - pandas >=0.20
     - pytz
     - requests
+    - retrying
     - scikit-learn
     - scipy
     - timeout-decorator
