@@ -9,7 +9,7 @@ source:
   sha256: d4892fd84abec97d040a6565912f61df3fe1e1db016d78b5159a6d83f2558e7e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
@@ -20,6 +20,7 @@ requirements:
   run:
     - python >=3.6
     - beautifulsoup4
+    - cftime
     - folium
     - iris
     - matplotlib
