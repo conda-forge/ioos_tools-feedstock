@@ -1,4 +1,4 @@
-{% set version = "1.3.2" %}
+{% set version = "1.3.3" %}
 
 package:
   name: ioos-tools
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/ioos_tools/ioos_tools-{{ version }}.tar.gz
-  sha256: c467a269b19b9f4d493d15506aa5b56543170b21eab52f4793004547e2aea515
+  sha256: 190db4f5e505414c4b51b48f8815efdd5b47cb08631f0889c3ba779ad79d4033
 
 build:
   number: 0
