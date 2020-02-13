@@ -9,7 +9,7 @@ source:
   sha256: 0cddd2b7c9d36443bbe98147ac1f66a468dc5d06d742c8b7b0f5c6cbdba0f506
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -23,7 +23,7 @@ requirements:
     - cftime
     - folium
     - iris
-    - matplotlib
+    - matplotlib-base
     - netcdf4
     - numpy
     - oceans
