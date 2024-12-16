@@ -1,24 +1,26 @@
+{% set name = "ioos_tools" %}
 {% set version = "1.4.0" %}
 
 package:
-  name: ioos-tools
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/i/ioos_tools/ioos_tools-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/i/ioos_tools/ioos_tools-{{ version }}.tar.gz
   sha256: 0cddd2b7c9d36443bbe98147ac1f66a468dc5d06d742c8b7b0f5c6cbdba0f506
 
 build:
-  number: 1
+  number: 2
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - beautifulsoup4
     - cftime
     - folium
@@ -38,8 +40,29 @@ requirements:
     - lxml
 
 test:
+  requires:
+    - python {{ python_min }}
+    - pip
   imports:
     - ioos_tools
+  
+outputs:
+  - name: ioos_tools
+  - name: ioos-tools
+    build:
+      noarch: python
+    requirements:
+      host:
+        - python {{ python_min }}
+      run:
+        - {{ pin_subpackage("ioos_tools", max_pin="x.x.x") }}
+        - python >={{ python_min }}
+    test:
+      requires:
+        - python {{ python_min }}
+        - pip
+      imports:
+        - ioos_tools
 
 about:
   home: https://github.com/pyoceans/ioos_tools
